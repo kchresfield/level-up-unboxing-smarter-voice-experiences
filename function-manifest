@@ -1,0 +1,24 @@
+const tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "send-message",
+            "description": "Send a message to the caller",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "phoneNumber": {
+                        "type": "string",
+                        "description": "Phone number belonging to the person who called"
+                    }
+                },
+                "required": [
+                    "phoneNumber"
+                ],
+                "additionalProperties": false
+            },
+            "strict": true
+        }
+    }
+]
+export default tools;
